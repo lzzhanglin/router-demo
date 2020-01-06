@@ -10,6 +10,7 @@ import PageThree from '../page/pageThree'
 import PageFour from '../page/pageFour'
 import Dashboard from '../page/dashboard'
 import auth from '../router/auth'
+
 const {  Content } = Layout;
 class AppContainer extends Component {
     constructor(props){
@@ -22,6 +23,7 @@ class AppContainer extends Component {
         
     }
     signOut = ()=>{
+        
         auth.logout(function() {
             window.sessionStorage.username=undefined
             window.sessionStorage.password=undefined
